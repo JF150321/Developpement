@@ -327,6 +327,50 @@ header .menu li a:hover {
   }
 }
 
+@media screen and (max-width: 520px) {
+  #home_page .logo_tbe2 {
+    margin-top: -60px;
+    margin-bottom: 50px;
+    left: 0px;
+  }
+}
+
+#home_page .deco_logo {
+  display: none;
+}
+
+@media screen and (max-width: 520px) {
+  #home_page .deco_logo {
+    display: block;
+    height: 1px;
+    width: 300px;
+    background: #bda845;
+    position: absolute;
+    z-index: 40;
+    top: 300px;
+    -webkit-animation-name: decoApparition;
+            animation-name: decoApparition;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+  }
+  @-webkit-keyframes decoApparition {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 300px;
+    }
+  }
+  @keyframes decoApparition {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 300px;
+    }
+  }
+}
+
 #home_page .text_home {
   font-family: 'Ibarra Real Nova', serif;
   font-size: 1.4rem;
@@ -512,6 +556,13 @@ header .menu li a:hover {
   }
 }
 
+@media screen and (max-width: 520px) {
+  #home_page .slider {
+    display: block;
+    margin-left: -20px;
+  }
+}
+
 @-webkit-keyframes slideright {
   from {
     opacity: 0;
@@ -580,5 +631,9 @@ footer {
 .contact {
   position: relative;
   top: 100px;
+}
+
+.logo {
+  color: black;
 }
 /*# sourceMappingURL=home_page.css.map */
